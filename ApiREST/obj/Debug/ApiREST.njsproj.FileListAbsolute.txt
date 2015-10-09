@@ -1,0 +1,2 @@
+C:\Users\julio\Documents\Visual Studio 2015\Projects\Api-REST-Practica1\ApiREST\obj\Debug\ApiREST.njsprojResolveAssemblyReference.cache
+C:\Users\julio\Documents\Visual Studio 2015\Projects\Api-REST-Practica1\ApiREST\bin\Microsoft.NodejsTools.WebRole.dll
