@@ -1,0 +1,10 @@
+{
+  "name": "ApiREST",
+  "version": "0.0.0",
+  "description": "ApiREST",
+  "main": "app.js",
+  "author": {
+    "name": "julio",
+    "email": ""
+  }
+}
