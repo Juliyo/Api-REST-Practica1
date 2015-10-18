@@ -33,7 +33,8 @@
     <Compile Include="app.js" />
     <Compile Include="models\estaciones.js" />
     <Compile Include="models\lecturas.js" />
-    <Compile Include="routes\routes.js" />
+    <Compile Include="routes\estaciones.js" />
+    <Compile Include="routes\lecturas.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>

@@ -5,10 +5,14 @@ module.exports = function (app) {
     
     //GET - Return all tvshows in the DB
     findAllEstaciones = function (req, res) {
-        Estaciones.find(function (err, estacion) {
+        Estaciones.find(function (err, estaciones) {
             if (!err) {
                 console.log('GET /estaciones')
-                res.send(estacion);
+                /*for(var i in estaciones) {
+                    estaciones[i]._id = undefined;
+                    console.log("hola");
+                    }*/
+                res.send(estaciones);
             } else {
                 console.log('ERROR: ' + err);
             }
@@ -33,7 +37,7 @@ module.exports = function (app) {
         console.log(req.body);
         
         var estacion = new Estaciones({
-            _id:req.body.identificadorLector,
+            _id: req.body.identificadorLector,
             identificadorLector: req.body.identificadorLector,
             latitud: req.body.latitud,
             longitud: req.body.longitud
@@ -55,8 +59,9 @@ module.exports = function (app) {
     //PUT - Update a register already exists
     updateEstacion = function (req, res) {
         Estaciones.findById(req.params.id, function (err, estacion) {
+            //estacion._id = req.body.identificadorLector;
             estacion.identificadorLector = req.body.identificadorLector;
-            estacion.latitud=req.body.latitud;
+            estacion.latitud = req.body.latitud;
             estacion.longitud = req.body.longitud;
             
             estacion.save(function (err) {

@@ -8,6 +8,8 @@ var lecturasSchema = new Schema({
     fechaHora: { type: String },
     latitud: { type: Number },
     longitud: { type: Number }
+}, {
+    versionKey: false
 });
 
 

@@ -6,7 +6,8 @@ var estacionesSchema = new Schema({
     identificadorLector: { type: Number },
     latitud: { type: Number },
     longitud: { type: Number }
+}, {
+    versionKey: false
 });
-
 
 module.exports = mongoose.model('Estaciones', estacionesSchema);

@@ -14,9 +14,10 @@ app.get('/', function (req, res) {
     res.send("Hello world!");
 });
 
-routes = require('./routes/routes.js')(app);
+routes1 = require('./routes/estaciones.js')(app);
+routes2 = require('./routes/lecturas.js')(app);
 
-mongoose.connect('mongodb://localhost/estaciones', function (err, res) {
+mongoose.connect('mongodb://localhost/practica1', function (err, res) {
     if (err) {
         console.log('ERROR: connecting to Database. ' + err);
     } else {
