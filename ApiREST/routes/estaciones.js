@@ -81,8 +81,10 @@ module.exports = function (app) {
             estacion.remove(function (err) {
                 if (!err) {
                     console.log('Removed');
+                    res.status(200).send();
                 } else {
                     console.log('ERROR: ' + err);
+                    res.status(500).send();
                 }
             })
         });
